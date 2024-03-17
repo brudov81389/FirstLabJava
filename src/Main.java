@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -9,9 +10,21 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.println("Witaj w systemie rezerwacji");
         System.out.println();
-        taskTwo();
+        multiply();
     }
 
+    public static void multiply()
+    {
+        for(int i = 1; i <= 10; i++)
+        {
+            for(int j = 1; j <= 10; j++)
+            {
+                int r = i * j;
+                System.out.println(String.format("%d * %d = %d", i, j, r));
+            }
+            System.out.println();
+        }
+    }
     public static void taskTwo()
     {
         System.out.println();
