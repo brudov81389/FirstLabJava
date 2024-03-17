@@ -1,4 +1,5 @@
 import java.util.Objects;
+import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -8,12 +9,17 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.println("Witaj w systemie rezerwacji");
         System.out.println();
-        displayInformation("Company");
-        System.out.println();
-        displayInformation("Hotel");
-
+        taskTwo();
     }
 
+    public static void taskTwo()
+    {
+        System.out.println();
+        Scanner scanner = new Scanner(System.in);
+        String userString = scanner.nextLine();
+        System.out.println(String.format("Your print : %s", userString));
+
+    }
     public static void displayInformation(String typeInfo)
     {
         if(Objects.equals(typeInfo, "Company"))
